@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html id="top">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ <!-- <link rel="stylesheet" href="css/animated-gallery.css" type="text/css" />	
+	<link rel="stylesheet" type="text/css" href="css/animation.css" /> -->
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Abel'>
+	<script src="https://kit.fontawesome.com/0b94c74488.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- JavaScript Libraries -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+	<title>SE-Portfolio Template</title>
+	<style type="text/css">
+		* {
+		  box-sizing: border-box;
+		}
+		body, html {
+		  margin: 0;
+		  font-family: 'Abel';font-size: 18px;
+		  scroll-behavior: smooth;
+		}
+		::selection {
+			background-color: #E41937;
+			color: #fff;
+		}
+		main {
+			overflow-x: hidden;
+		}
+	</style>
+</head>
+
+<!-- Loading Section 
+<div id="loading">
+	<div class="loader-wrapper">
+	  <span class="loader"><span class="loader-inner"></span></span>
+	</div>
+	<script>
+	
+		$(window).on("load",function(){ 
+		  setInterval(function(){ 
+		  	var img = document.createElement("img")
+		     img.src = "image/paint-splash-shape-2-1.png"
+		     img.style.width = "200px"
+		     img.style.position = "absolute"
+		     img.style.top = Math.floor(Math.random() * 100)+"%";
+		     img.style.left = Math.floor(Math.random() * 100)+"%";
+		     document.querySelector(".loader-wrapper").appendChild(img);
+		  }, 2000);
+		  $(".loader-wrapper").fadeOut("slow");
+		});
+		
+	</script>
+	<style type="text/css">
+      .loader-wrapper {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #101010;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;
+        overflow: hidden;
+      }
+      .loader {
+        border: 16px solid #0000;
+			  border-radius: 50%;
+			  border-top: 16px solid #E41937;
+			  border-bottom: 16px solid #0000;
+			  width: 100px;
+			  height: 100px;
+			  -webkit-animation: spin 2s linear infinite;
+			  animation: spin 2s linear infinite;
+        z-index: 10;
+      }
+
+      @-webkit-keyframes spin {
+			  0% { -webkit-transform: rotate(0deg); }
+			  100% { -webkit-transform: rotate(360deg); }
+			}
+
+			@keyframes spin {
+			  0% { transform: rotate(0deg); }
+			  100% { transform: rotate(360deg); }
+			}
+
+			/*
+      @keyframes loader {
+        0% { transform: rotate(0deg);}
+        25% { transform: rotate(180deg);}
+        50% { transform: rotate(180deg);}
+        75% { transform: rotate(360deg);}
+        100% { transform: rotate(360deg);}
+      }
+      */
+
+    </style>
+</div>
+-->
+
+<body style="background: #101010;">
+
+<div class="content">
+
+<div class="container-fluid">
+	<a class="navbar-brand" href="javascript:void(0)"><img src="image/logo.png" class="rounded-circle w-3 h-3 mt-3" width=""></a>
+</div>
+<hr class="bg-white position-relative" style="z-index: 2;">
+<nav class="navbar navbar-expand-sm navbar-dark" style="z-index: 1000;background:#101010;">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#top">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">My skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#goals">My Goals</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#career">My Career</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#blog">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>  
+    </ul>
+  </div>
+  <style>
+  @media (min-width: 576px) {
+  	nav.navbar {
+  		position: sticky;top: 0px;
+  	}
+  }
+
+  .active {
+  	color: #E41937 !important;
+  }
+  </style>
+  <script>
+  	$(".navbar li.nav-item a.nav-link").addClass('text-white')
+  </script>
+</nav>
+
+<div class="container-fluid position-relative">
+
+			<div class="position-absolute" style="right:0;bottom:50px;z-index:1">
+				<img src="image/paint-splash-shape-2-2.png" width="100">
+			</div>
+
+</div>
+
+	<main class="w-100 d-flex flex-column justify-content-center" style="min-height: 100vh;background:#101010;  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;">
+
+		<section  id="home" class="mt-5" data-aos="fade-in">
+			<div class="container">
+				<div class="hero-image">
+				  <div class="hero-text">
+				    <h1>Hi, I am <span><span id="words">Ahmad Salah</span></span></h1>
+				    <br>
+				    <button>Hire me</button>
+				  </div>
+				</div>
+			</div>
+			<script>
+	      (function () {
+	        var words = ["Ahmad Salah","Web Designer","Web Developer","Photographer","Happy Person","Ambitious Person"],
+	        i = 0;
+	        setInterval(function(){ $('#home .hero-text #words').fadeOut(function(){
+	            $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+	          }); 
+
+	      		}, 3000)
+
+	      })();
+    	</script>
+			<style>
+
+				.hero-image {
+				  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/person2.jpg");
+				  width: 100%;
+				  height: 550px;
+				  background-position: center;
+				  background-repeat: no-repeat;
+				  background-size: cover;
+				  background-attachment: fixed;
+				  position: relative;
+				}
+
+				.hero-text {
+				  text-align: center;
+				  position: absolute;
+				  top: 50%;
+				  left: 50%;
+				  transform: translate(-50%, -50%);
+				  color: white;
+				}
+
+				.hero-text button {
+				  border: none;
+				  outline: 0;
+				  display: inline-block;
+				  padding: 10px 25px;
+				  color: black;
+				  background-color: #ddd;
+				  text-align: center;
+				  cursor: pointer;
+				}
+
+				.hero-text button:hover {
+				  background-color: #555;
+				  color: white;
+				}
+
+				/* button styles */
+				.hero-image button {
+					background: #E41937;
+					color:white;
+					transition: 0.5s
+				}
+				.hero-image button:hover {
+					background: #E41937;
+					opacity: 0.5;
+					transition: 0.5s
+				}
+
+				#home .hero-text span {
+					border-bottom: solid #E41937;
+				}
+			</style>
+		</section>
+
+		<div class="container-fluid position-relative">
+
+					<div class="position-absolute" style="left:400px;top:100px;z-index:1">
+						<img src="image/paint-splash-shape-2-1.png" width="100">
+					</div>
+					<div class="position-absolute" style="left:500px;top:500px;z-index:1">
+						<img src="image/paint-splash-shape-2-2.png" width="100">
+					</div>
+
+		</div>
+
+		<section id="about" class="mb-5 position-relative" style="z-index: 2;">
+			
+			<div class="container" style="margin-top: 65px;">
+				<div class="row">
+					<div class="col-md-6" data-aos="fade-right">
+						<div class="text-white" style="padding: 20px;">
+							<h2 class="text-left mt-2" style="color: #E41937;">About Me</h2>
+							<p class="text-left">
+								I am a coder and I love to make websites and sell them to people. I start coding 4 years ago and I am really good at it. So I decided to take advantage of my talent and start designing websites for people.
+								<br><br><br>
+								<span class="fs-6 text-warning">My Business</span><br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+								<br><br><br>
+								<span class="fs-6 text-warning">My Life</span><br>
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
+					</div>
+					<div class="col mt-5" style="background:#0000;position:relative" data-aos="flip-left">
+						<div class="w-100" style="height:500px;">
+							<div class="bg-white img-border" style="left: 50%;position:absolute;top:0;z-index:3;transform:rotate(-15deg);">
+								<img src="image/business.jpg" style="object-fit: cover;width:90%;height: 80%;margin-top: 10%;margin-left: 5%;">
+							</div>
+							<div class="bg-white img-border" style="top: 50px;margin-left: 10%;position:absolute;top:0;z-index:3;transform:rotate(25deg);">
+								<img src="image/person.jpg" style="object-fit: cover;width:90%;height: 80%;margin-top: 10%;margin-left: 5%;">
+							</div>
+							<div class="bg-white img-border" style="top: 150px;margin-left: 10%;position:absolute;bottom:0;z-index:1;transform:rotate(-25deg);">
+								<img src="image/work.jpg" style="object-fit: cover;width:90%;height: 80%;margin-top: 10%;margin-left: 5%;">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<style>
+				.img-border {
+					transition: 0.5s;
+					width: 50%;
+					height: 350px;
+				}
+				.img-border:hover {
+					z-index: 5 !important;
+					transition: 0.5s;
+					width: 70% !important;
+					height: 400px !important;
+				}
+			</style>
+		</section>
+
+		<div class="container-fluid position-relative">
+
+			<div class="position-absolute" style="left:0;">
+				<img src="image/paint-splash-1.png" width="100">
+			</div>
+			<div class="position-absolute" style="right:0;top:150px;z-index:1">
+				<img src="image/paint-splash-2.png" width="100">
+			</div>
+
+			<div class="position-absolute" style="left:0;top:550px;z-index:1">
+				<img src="image/paint-splash-2.png" width="100">
+			</div>
+			<div class="position-absolute" style="right:0;top:650px;z-index:1">
+				<img src="image/paint-splash-1.png" width="100">
+			</div>
+
+		</div>
+
+		<section id="skills" class="mt-5 position-relative" style="z-index: 2;">
+			<div class="text-center mb-5 text-white" style="margin-top: 65px;">
+				<h2 style="color: #E41937;" data-aos="fade-up">My Skills</h2>
+				<span data-aos="fade-up" data-aos-delay="150">What I am good at</span>
+			</div>
+			<div class="container" style="background:#0000;text-transform: uppercase;">
+				
+				<div class="row" style="justify-content: center;">
+					<div class="col-md-3" data-aos="flip-up"><span>Bootstrap</span></div>
+					<div class="col-md-3" data-aos="flip-up"><span>HTML5</span></div>
+					<div class="col-md-3" data-aos="flip-up"><span>CSS3</span></div>
+					<div class="col-md-3" data-aos="flip-up"><span>JavaScript</span></div>
+					<div class="col-md-3" data-aos="flip-up"><span>JQUERY</span></div>
+					<div class="col-md-3" data-aos="flip-up"><span>PHP</span></div>
+					<div class="col-md-3" data-aos="flip-up"><span>PHP MyAdmin</span></div>
+					<div class="col-md-3" data-aos="flip-up"><span>WordPress</span></div>
+				</div>
+			</div>
+			<style>
+				#skills .row .col-md-3 {
+					margin: 20px 10px;
+					background: #101010;
+					padding: 20px;
+					border: #E41937 groove 2px;
+					transition: 0.5s;
+				}
+				#skills .row .col-md-3:hover {
+					background: #E41937;
+					transition: 0.2s;
+				}
+				
+				#skills .row .col-md-3 span {
+					color: #E41937;
+					font-weight: bold;
+				}
+				#skills .row .col-md-3:hover span {
+					color: white !important;
+				}
+			</style>
+		</section>
+
+		<section id="goals" class="mt-5 position-relative" style="z-index: 2;">
+			<div class="text-center mb-5 text-white" style="margin-top: 65px;">
+				<h2 style="color: #E41937;" data-aos="fade-up">My Goals</h2>
+				<span data-aos="fade-up" data-aos-delay="150">What do I aspire to</span>
+			</div>
+			<div class="container">
+				<div class="w-100">
+
+					<div class="row text-center text-white d-flex flex-row" style="justify-content: center;">
+
+						<div class="col-sm-5 card-col" style="background:#E41937" data-aos="fade-up-right">
+							<h3>Build a successful company</h3>
+							<p>
+								Write here an article about everything related to the goal you are seeking.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+							</p>
+						</div>
+
+						<div class="col-sm-5 card-col" style="background:#0A2F6E" data-aos="fade-up-left">
+							<h3>Travel into the world</h3>
+							<p>
+								Write here an article about everything related to the goal you are seeking. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							</p>
+						</div>
+
+						<div class="col-sm-5 card-col" style="background:#0A2F6E" data-aos="fade-up-right" data-aos-delay="150">
+							<h3>Travel into the world</h3>
+							<p>
+								Write here an article about everything related to the goal you are seeking. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							</p>
+						</div>
+
+						<div class="col-sm-5 card-col" style="background:#E41937" data-aos="fade-up-left" data-aos-delay="150">
+							<h3>Travel into the world</h3>
+							<p>
+								Write here an article about everything related to the goal you are seeking. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<style>
+				#goals .card-col {
+					margin: 10px;
+					padding: 50px;
+					height: auto;
+					overflow-y: hidden;
+				}
+			</style>
+		</section>
+
+		<div class="container-fluid position-relative">
+
+					<div class="position-absolute" style="left:0px;top:500px;z-index:1">
+						<img src="image/paint-splash-shape-2-2.png" width="100">
+					</div>
+					<div class="position-absolute" style="right:0px;top:100px;z-index:1">
+						<img src="image/paint-splash-1.png" width="100">
+					</div>
+
+		</div>
+
+		<section id="career" class="mt-5 position-relative" style="z-index: 2;">
+			<div class="text-center mb-5 text-white" style="margin-top: 65px;">
+				<h2 style="color: #E41937;" data-aos="fade-up">My Career</h2>
+				<span data-aos="fade-up" data-aos-delay="150">What have I done in the last 4 years</span>
+			</div>
+			<div class="container">
+				<div class="w-80">
+
+					<div class="row text-center text-white d-flex flex-row" style="justify-content: center;">
+
+						<div class="col-sm-3 card-col" style="background:#E41937" data-aos="fade-up-right">
+							<h3>Apr/2017</h3>
+							<span>colombia / USA</span><br>
+							<p>
+								Write here an article about everything related to you are seeking.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</p>
+						</div>
+
+						<div class="col-sm-3 card-col" style="background:#0A2F6E" data-aos="zoom-in">
+							<h3>Mar/2018</h3>
+							<span>colombia / USA</span><br>
+							<p>
+								Write here an article about everything related to you are seeking.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</p>
+						</div>
+
+						<div class="col-sm-3 card-col" style="background:#E41937" data-aos="fade-up-left">
+							<h3>Jan/2019</h3>
+							<span>colombia / USA</span><br>
+							<p>
+								Write here an article about everything related to you are seeking.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</p>
+						</div>
+
+						<div class="col-sm-3 card-col" style="background:#0A2F6E" data-aos="fade-up-right">
+							<h3>Dec/2020</h3>
+							<span>colombia / USA</span><br>
+							<p>
+								Write here an article about everything related to you are seeking.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</p>
+						</div>
+
+						<div class="col-sm-3 card-col" style="background:#E41937" data-aos="zoom-in">
+							<h3>Sep/2021</h3>
+							<span>Amman / Jordan</span><br>
+							<p>
+								Write here an article about everything related to you are seeking.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</p>
+						</div>
+
+						<div class="col-sm-3 card-col" style="background:#0A2F6E" data-aos="fade-up-left">
+							<h3>Nov/2021</h3>
+							<span>Amman / Jordan</span><br>
+							<p>
+								Write here an article about everything related to you are seeking.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<style>
+				#career .card-col {
+					margin: 10px;
+					padding: 50px;
+					height: auto;
+					overflow-y: hidden;
+				}
+			</style>
+		</section>
+
+		<div class="container-fluid position-relative">
+
+			<div class="position-absolute" style="right:0px;top:100px;z-index:1">
+				<img src="image/paint-splash-shape-2-2.png" width="100">
+			</div>
+			<div class="position-absolute" style="left:0px;top:500px;z-index:1">
+				<img src="image/paint-splash-1.png" width="100">
+			</div>
+
+		</div>
+
+	    <!-- start section portfolio -->
+  	<section id="blog" class="text-center paddsection" style="z-index: 2;">
+	      <div class="text-center mb-5 text-white" style="margin-top: 65px;">
+          <h2 style="color: #E41937;" data-aos="fade-up">My Portfolio</h2>
+          <span data-aos="fade-up" data-aos-delay="150">Take a look at my portfolio</span>
+        </div>
+    
+
+    	<div class="container">
+      
+		<!--
+          <div class="portfolio-list">
+
+			
+            <ul class="nav list-unstyled" id="portfolio-flters">
+              <li class="filter filter-active" data-filter=".all" data-aos="flip-right">All</li>
+              <li class="filter" data-filter=".funny" data-aos="flip-right" data-aos-delay="200">Funny</li>
+              <li class="filter" data-filter=".action" data-aos="flip-right" data-aos-delay="400">Actions</li>
+              <li class="filter" data-filter=".zebras" data-aos="flip-right" data-aos-delay="600">Business</li>
+              <li class="filter" data-filter=".action" data-aos="flip-right" data-aos-delay="800">Animals</li>
+            </ul>
+			
+
+          </div>
+		-->
+
+          <div class="container blog-container" data-aos="fade-out">
+			<div class="row">
+
+				<div class="blog-thumbnail border-red col-sm-2 position-relative">
+					<img src="image/portfolio/image1.jpg" alt="Cat">
+					<div class="middle">
+					<i class="fas fa-heart"></i>
+					<i class="fas fa-expand myImg" id="image/portfolio/image1.jpg"></i>
+					<i class='fas fa-play-circle myVid' id="video/cat.mp4"></i>
+					</div>
+				</div>
+
+				<div class="blog-thumbnail border-red col-sm-2 position-relative">
+					<img src="image/portfolio/image2.jpg" alt="White cat">
+					<div class="middle">
+					<i class="fas fa-heart"></i>
+					<i class="fas fa-expand myImg" id="image/travel.jpg"></i>
+					<i class='fas fa-play-circle myVid' id="video/cat.mp4"></i>
+					</div>
+				</div>
+
+				<div class="blog-thumbnail border-red col-sm-2 position-relative">
+					<img src="image/portfolio/image3.jpg" alt="Happy Man">
+					<div class="middle">
+					<i class="fas fa-heart"></i>
+					<i class="fas fa-expand myImg" id="image/travel.jpg"></i>
+					<i class='fas fa-play-circle myVid' id="video/gold-silver.mp4"></i>
+					</div>
+				</div>
+
+				<div class="blog-thumbnail border-red col-sm-2 position-relative">
+					<img src="image/portfolio/image4.jpg" alt="Funny Women">
+					<div class="middle">
+					<i class="fas fa-heart"></i>
+					<i class="fas fa-expand myImg" id="image/travel.jpg"></i>
+					<i class='fas fa-play-circle myVid' id="video/gold-silver.mp4"></i>
+					</div>
+				</div>
+
+				<div class="blog-thumbnail border-red col-sm-2 position-relative">
+					<img src="image/portfolio/image5.jpg" alt="Lion">
+					<div class="middle">
+					<i class="fas fa-heart"></i>
+					<i class="fas fa-expand myImg" id="image/travel.jpg"></i>
+					<i class='fas fa-play-circle myVid' id="video/gold-silver.mp4"></i>
+					</div>
+				</div>
+
+				<div class="blog-thumbnail border-red col-sm-2 position-relative">
+					<img src="image/portfolio/image6.jpg" alt="Friends">
+					<div class="middle">
+					<i class="fas fa-heart"></i>
+					<i class="fas fa-expand myImg" id="image/travel.jpg"></i>
+					<i class='fas fa-play-circle myVid' id="video/gold-silver.mp4"></i>
+					</div>
+				</div>
+
+				<div class="blog-thumbnail border-red col-sm-2 position-relative">
+					<img src="image/portfolio/image7.jpg" alt="Banana">
+					<div class="middle">
+					<i class="fas fa-heart"></i>
+					<i class="fas fa-expand myImg" id="image/travel.jpg"></i>
+					<i class='fas fa-play-circle myVid' id="video/photography.mp4"></i>
+					</div>
+				</div>
+
+				<div class="blog-thumbnail border-red col-sm-2 position-relative">
+					<img src="image/portfolio/image8.jpg" alt="Cute Cats">
+					<div class="middle">
+					<i class="fas fa-heart"></i>
+					<i class="fas fa-expand myImg" id="image/travel.jpg"></i>
+					<i class='fas fa-play-circle myVid' id="video/cat.mp4"></i>
+					</div>
+				</div>
+
+				<div class="blog-thumbnail border-red col-sm-2 position-relative">
+					<img src="image/portfolio/image9.jpg" alt="Crazy Man">
+					<div class="middle">
+					<i class="fas fa-heart"></i>
+					<i class="fas fa-expand myImg" id="image/travel.jpg"></i>
+					<i class='fas fa-play-circle myVid' id="video/photography.mp4"></i>
+					</div>
+				</div>
+
+				<div class="blog-thumbnail border-red col-sm-2 position-relative">
+					<img src="image/portfolio/image11.jpg" alt="Sport">
+					<div class="middle">
+					<i class="fas fa-heart"></i>
+					<i class="fas fa-expand myImg" id="image/travel.jpg"></i>
+					<i class='fas fa-play-circle myVid' id="video/gold-silver.mp4"></i>
+					</div>
+				</div>
+
+				<div class="blog-thumbnail border-red col-sm-2 position-relative">
+					<img src="image/portfolio/image12.jpg" alt="Freedom">
+					<div class="middle">
+					<i class="fas fa-heart"></i>
+					<i class="fas fa-expand myImg" id="image/travel.jpg"></i>
+					<i class='fas fa-play-circle myVid' id="video/photography.mp4"></i>
+					</div>
+				</div>
+
+				<div class="blog-thumbnail border-red col-sm-2 position-relative">
+					<img src="image/portfolio/image13.jpg" alt="Snow">
+					<div class="middle">
+					<i class="fas fa-heart"></i>
+					<i class="fas fa-expand myImg" id="image/travel.jpg"></i>
+					<i class='fas fa-play-circle myVid' id="video/photography.mp4"></i>
+					</div>
+				</div>
+
+				<div class="blog-thumbnail border-red col-sm-2 position-relative">
+					<img src="image/portfolio/image14.jpg" alt="Surfing">
+					<div class="middle">
+					<i class="fas fa-heart"></i>
+					<i class="fas fa-expand myImg" id="image/travel.jpg"></i>
+					<i class='fas fa-play-circle myVid' id="video/photography.mp4"></i>
+					</div>
+				</div>
+            
+            </div>
+
+            <div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01">
+				<video controls autoplay muted id="vid01">
+					<source type="video/mp4"></source>
+					Your browser does not support the video tag.
+				</video>
+				<div id="caption"></div>
+			</div>
+
+        </div>
+      </div>
+
+      	<style>
+
+	/* The Modal (background) */
+	.modal {
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		padding-top: 100px; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	}
+
+	/* Modal Content (image) */
+	.modal-content, #myModal video {
+		margin: auto;
+		display: block;
+		width: 80%;
+		max-width: 700px;
+	}
+
+	/* Caption of Modal Image */
+	#caption {
+		margin: auto;
+		display: block;
+		width: 80%;
+		max-width: 700px;
+		text-align: center;
+		color: #ccc;
+		padding: 10px 0;
+		height: 150px;
+	}
+
+	/* Add Animation */
+	.modal-content, #caption, #myModal video {  
+		-webkit-animation-name: zoom;
+		-webkit-animation-duration: 0.6s;
+		animation-name: zoom;
+		animation-duration: 0.6s;
+	}
+
+	@-webkit-keyframes zoom {
+		from {-webkit-transform:scale(0)} 
+		to {-webkit-transform:scale(1)}
+	}
+
+	@keyframes zoom {
+		from {transform:scale(0)} 
+		to {transform:scale(1)}
+	}
+
+	/* The Close Button */
+	.close {
+		position: absolute;
+		top: 70px;
+		right: 35px;
+		color: #f1f1f1;
+		font-size: 40px;
+		font-weight: bold;
+		transition: 0.3s;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #bbb;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	/* 100% Image Width on Smaller Screens */
+	@media only screen and (max-width: 700px){
+		.modal-content, #myModal video {
+		width: 100%;
+		}
+	}
+
+	/******* Portfolio Style *******/
+
+						#blog .blog-list {
+    margin-bottom: 50px;
+    }
+
+    #blog .blog-list .nav {
+    display: inline-block;
+    }
+
+    #blog .blog-list .nav .filter {
+    margin: 10px 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--primaryColor);
+    line-height: 16px;
+    cursor: pointer;
+    font-family: 'Josefin sans',Sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    float: none; 
+    display: inline-block;
+    transition: all 0.3s ease-in-out 0s;
+    text-decoration: none;
+    }
+
+    #blog .blog-list .nav .filter:hover, #blog .blog-list .nav .filter-active  {
+    color: #b8a07e;
+    background: var(--secondPrimaryColor);
+    transition: all 0.3s ease-in-out 0s;
+    }
+
+
+    .blog-container {
+    /*width: 100% !important;*/
+    overflow: hidden;
+        margin: auto;
+    padding: 10px;
+    }
+
+    .blog-thumbnail {
+    /*flex:0 0 auto;width:16.66666667%;*/
+    /*margin-left: 10px;*/
+    padding: 5px;
+
+
+    }
+
+    #blog .blog-thumbnail img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 150px !important;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    }
+
+    #blog .blog-thumbnail .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    }
+
+    #blog .blog-thumbnail:hover img {
+    opacity: 0.5;
+    }
+
+    #blog .blog-thumbnail:hover .middle {
+    opacity: 1;
+    }
+
+    #blog .blog-thumbnail i.fas {
+    font-size: 25px;
+    transition: 0.1s;
+    color: white;
+    cursor: pointer;
+    }
+    #blog .blog-thumbnail i.fas:hover {
+    font-size: 30px;
+    color: pink;
+    transition: 0.1s;
+    }
+
+    .blog-thumbnail.border-red img {
+    border: solid var(--primaryColor) !important;
+    }
+    .blog-thumbnail.border-blue img {
+    border: solid var(--secondPrimaryColor) !important;
+    }
+
+    	</style>
+
+		<script>
+
+			// Get the modal
+			var modal = document.getElementById("myModal");
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var image = document.querySelectorAll(".blog-thumbnail img");
+
+			var img = document.querySelectorAll(".myImg");
+			var video = document.querySelectorAll(".myVid");
+
+			var modalImg = document.getElementById("img01");
+			var modalVideo = document.getElementById("vid01");
+			var captionText = document.getElementById("caption");
+			for (let i = 0; i < img.length; i++) {
+				img[i].addEventListener('click', function() {
+					modal.style.display = "block";
+					modalVideo.style.display = "none";
+					modalImg.style.display = "block";
+					modalImg.src = image[i].src;
+					captionText.innerHTML = image[i].alt;
+
+					// Get the <span> element that closes the modal
+					var span = document.querySelectorAll(".close");
+					// When the user clicks on <span> (x), close the modal
+					span[i].onclick = function() { 
+						modal.style.display = "none";
+					}
+
+				});
+			}
+
+			for (let i = 0; i < img.length; i++) {
+				video[i].addEventListener('click', function() {
+					modal.style.display = "block";
+					modalImg.style.display = "none";
+					modalVideo.style.display = "block";
+					modalVideo.src = this.id;
+				});
+			}
+
+		</script>
+
+		<script>
+			// Get the <span> element that closes the modal
+			var span = document.querySelector(".close");
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() { 
+				modal.style.display = "none";
+			}
+		</script>
+
+		</section>
+
+		<section id="contact" class="mt-5">
+			<div class="text-center mb-5 text-white" style="margin-top: 65px;">
+				<h2 style="color: #E41937;" data-aos="fade-up">Contact Me</h2>
+				<span data-aos="fade-up" data-aos-delay="150">Let's get in touch</span>
+			</div>
+			<div class="container">
+				<div class="row d-flex flex-row" style="justify-content: center;">
+					<div class="col-7" data-aos="fade-up-right">
+						<img src="image/document.jpg" class="w-100 h-100">
+					</div>
+					<div class="col" data-aos="fade-up-left">
+						<div class="w-100 text-center text-white bg-dark" style="height:100%;">
+							<div style="background: #0000;position:relative;width: 100%;height: 400px;">
+								<div class="contact-text position-absolute" style="top:50%;left:50%;transform:translate(-50%,-50%);">
+									<a href="mailto:support@smart-ever.com" class="text-white" style="text-decoration:none;"><span>support@smart-ever.com</span></a>
+									<br><br>
+									<a href="mailto:abadran12345abc@gmail.com" class="text-white" style="text-decoration:none;"><span>abadran12345abc@gmail.com</span></a>
+									<br><br>
+									<a href="https://api.whatsapp.com/send?phone=962785759099&text=Hi%20we%20need%20help%20regarding%20something" class="text-white" style="text-decoration:none;" target="_blank"><span>+962785759099</span></a>
+									<br><br>
+									<a href="https://www.instagram.com/smart.everjo/" target="_blank" class="text-danger">
+										<i class="fa fa-instagram fs-5"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12" data-aos="zoom-in">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d433870.82677449274!2d35.66744179477717!3d31.835453336764523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5fb85d7981af%3A0x631c30c0f8dc65e8!2sAmman!5e0!3m2!1sen!2sjo!4v1647203958642!5m2!1sen!2sjo" width="100%" height="400" style="border:0;filter: invert(90%);" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+				</div>
+			</div>
+			<style>
+				form.form input, form.form textarea, button[type=submit] {
+					border-radius: 0;
+				}
+				@media (min-width: 551px) {
+					#contact .container .col {
+						padding-left: 0;
+					}
+					#contact .container .col-7 {
+						padding-right: 0;
+					}
+				}
+				@media (max-width: 551px) {
+					#contact .container .col, #contact .container .col-7 {
+						flex: 0 0 auto !important;
+						width:100% !important;
+					}
+				}
+				
+			</style>
+		</section>
+
+	<script>
+	  	const li = document.querySelectorAll('.nav-item .nav-link');
+	  	const sec = document.querySelectorAll('section');
+
+	  	function activeMenu() {
+	  		let len = sec.length;
+	  		while(--len && window.scrollY + 97 < sec[len].offsetTop){}
+	  			li.forEach(ltx => ltx.classList.remove("active"));
+	  			li[len].classList.add("active")
+	  	}
+	  	activeMenu();
+	  	window.addEventListener("scroll", activeMenu);
+  	</script>
+	</main>
+
+<footer class="w-100 mt-auto position-relative" style="height:100px">
+	<div class="position-absolute" style="top: 50%;left: 50%;transform:translate(-50%,-50%)">
+		<span class="text-secondary text-center">&copy; 2022 Copyright: <a href="https://smart-ever.com" target="_blank" class="text-link" style="text-decoration:none">Smart Ever. </a></span>
+		<span class="text-secondary text-center">Designed By <a href="https://smart-ever2.com/" target="_blank" class="text-info" style="text-decoration:none">Ahmad Badran</a></span>
+	</div>
+</footer>
+<!--
+<script src="js/animation.js"></script>
+  <script>
+    AOS.init({
+      delay: 0,
+      offset: 0,
+      once: true,
+    });
+  </script>
+  -->
+<script>
+   // Option 2 - jQuery Smooth Scrolling
+     $('.navbar a').on('click', function (e) {
+       if (this.hash !== '') {
+         e.preventDefault();
+    
+         const hash = this.hash;
+    
+         $('html, body')
+           .animate({
+             scrollTop: $(hash).offset().top
+           },1000);
+       }
+     });
+ 
+ // Option 3 - Smooth Scroll - https://github.com/cferdinandi/smooth-scroll
+//  const scroll = new SmoothScroll('.navbar a[href*="#"]', {
+// 	speed: 500
+// });
+</script>
+     
+
+
+</div>
+
+<!-- back to top btn -->
+<a id="button"></a>
+
+	<style>
+		#button {
+			display: inline-block;
+			background-color: #E41937;
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			position: fixed;
+			bottom: 30px;
+			right: 30px;
+			transition: background-color .3s, 
+				opacity .5s, visibility .5s;
+			opacity: 0;
+			visibility: hidden;
+			z-index: 1000;
+			text-decoration: none;
+		}
+		#button::after {
+			content: "\f106";
+			font-family: FontAwesome;
+			font-weight: normal;
+			font-style: normal;
+			font-size: 1.5em;
+			line-height: 50px;
+			color: #fff;
+		}
+		#button:hover {
+			cursor: pointer;
+			background-color: #333;
+		}
+		#button:active {
+			background-color: #555;
+		}
+		#button.show {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		/* Styles for the content section */
+		@media (min-width: 500px) {
+		#button {
+			margin: 30px;
+		}
+		}
+	</style>
+
+	<script>
+		var btn = $('#button');
+		$(window).scroll(function() {
+		if ($(window).scrollTop() > 300) {
+			btn.addClass('show');
+		} else {
+			btn.removeClass('show');
+		}
+		});
+
+		btn.on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({scrollTop:0}, '300');
+		});
+	</script>
+
+</body>
+</html>

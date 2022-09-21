@@ -1,0 +1,4 @@
+Primary colors:
+#E41937 red
+#0A2F6E blue
+#FFFFFF white
